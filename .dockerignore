@@ -1,0 +1,4 @@
+node_modules
+business.db
+.env
+.git

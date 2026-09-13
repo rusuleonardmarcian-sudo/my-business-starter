@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: my-business-starter
+    env: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: SESSION_SECRET
+        sync: false
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_PRO_PRICE_ID
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
